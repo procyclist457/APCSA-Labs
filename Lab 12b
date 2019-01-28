@@ -53,19 +53,19 @@ class Deck
       ranks.add("Ace");
       
       ArrayList<Integer> values = new ArrayList<Integer>();
-      values.add(new Integer(2));
-      values.add(new Integer(3));
-      values.add(new Integer(4));
-      values.add(new Integer(5));
-      values.add(new Integer(6));
-      values.add(new Integer(7));
-      values.add(new Integer(8));
-      values.add(new Integer(9));
-      values.add(new Integer(10));
-      values.add(new Integer(10));
-      values.add(new Integer(10));
-      values.add(new Integer(10));
-      values.add(new Integer(11));
+      values.add(2);
+      values.add(3);
+      values.add(4);
+      values.add(5);
+      values.add(6);
+      values.add(7);
+      values.add(8);
+      values.add(9);
+      values.add(10);
+      values.add(10);
+      values.add(10);
+      values.add(10);
+      values.add(11);
       
       int numCards = 0;
       int numSuits = 0;
@@ -103,7 +103,7 @@ class Deck
    private void shuffle(){
       for(int k = 0; k< cards.size(); k++){
          Card card = cards.get(k);
-         cards.remove(cards.indexOf(card));
+         cards.remove(card);
          cards.add((int)(Math.random() * 52), card);
       }
    }
